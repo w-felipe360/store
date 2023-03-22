@@ -1,4 +1,5 @@
 const { productsService } = require('../services');
+// const { testeValidation } = require('../middlewares/productsCodes');
 
 const listProducts = async (_req, res) => {
   const { type, message } = await productsService.findAll();
@@ -17,7 +18,13 @@ const findProduct = async (req, res) => {
   }
   return res.status(200).json(message[0]);
 };
+const writeProduct = async (req, res) => {
+  const { name } = req.body;
+  const { status, message } = await productsService.writeNewProduct(name);
+  return res.status(status).json({ message });
+};
 module.exports = {
   listProducts,
   findProduct,
+  writeProduct,
 };
