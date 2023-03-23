@@ -5,6 +5,10 @@ const salesRouter = express.Router();
 
 salesRouter.post('/', salesControllers.writeSale);
 
+salesRouter.get('/', salesControllers.listSales);
+
+salesRouter.get('/:id', salesControllers.findSale);
+
 // salesRouter.get('/', salesControllers.listSales);
 
 // salesRouter.get('/:id', salesControllers.findSale);

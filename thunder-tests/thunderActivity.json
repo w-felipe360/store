@@ -5,17 +5,12 @@
     "containerId": "",
     "name": "http://localhost:3001/procuts",
     "url": "http://localhost:3001/products/",
-    "method": "POST",
+    "method": "GET",
     "sortNum": 0,
     "created": "2023-03-21T20:29:39.816Z",
-    "modified": "2023-03-23T22:38:14.529Z",
+    "modified": "2023-03-23T22:40:11.178Z",
     "headers": [],
     "params": [],
-    "body": {
-      "type": "json",
-      "raw": "{\n  \"name\": \"ddasdasad\"\n}",
-      "form": []
-    },
     "tests": []
   },
   {
@@ -23,16 +18,16 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3001/sales/",
-    "url": "http://localhost:3001/sales/",
-    "method": "POST",
+    "url": "http://localhost:3001/sales/2",
+    "method": "GET",
     "sortNum": 0,
     "created": "2023-03-22T20:59:12.083Z",
-    "modified": "2023-03-23T22:05:13.631Z",
+    "modified": "2023-03-23T23:52:35.933Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "[\n  {\n    \"productId\": 321,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 250,\n    \"quantity\": 5\n  }\n]",
+      "raw": "[\n  {\n    \"productId\": 1,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 250,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []

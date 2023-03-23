@@ -37,7 +37,18 @@ const writeNewSale = async (products) => {
     },
   };
 };
-
+const findAllSales = async () => {
+  const sales = await salesModel.findAllSales();
+  return { type: null, message: sales };
+};
+const findSaleById = async (id) => {
+  const sale = await salesModel.findSaleById(id);
+  
+  return sale;
+};
 module.exports = {
   writeNewSale,
+  findAllSales,
+  findSaleById,
+  
 };
