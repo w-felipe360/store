@@ -4,16 +4,35 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:3001/procuts",
-    "url": "http://localhost:3001/products/",
-    "method": "POST",
+    "url": "http://localhost:3001/products/23",
+    "method": "GET",
     "sortNum": 0,
     "created": "2023-03-21T20:29:39.816Z",
-    "modified": "2023-03-22T19:57:48.674Z",
+    "modified": "2023-03-23T20:53:43.864Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
       "raw": "{\n  \"name\": \"dsad\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e2dd3b09-1f16-438a-af25-79981ebc43c1",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3001/sales/",
+    "url": "http://localhost:3001/sales/",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-22T20:59:12.083Z",
+    "modified": "2023-03-23T22:05:13.631Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n  {\n    \"productId\": 321,\n    \"quantity\": 1\n  },\n  {\n    \"productId\": 250,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []

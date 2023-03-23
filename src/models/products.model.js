@@ -16,7 +16,7 @@ const findAll = async () => {
 };
 
 const findById = async (id) => {
-  console.log('id:', id);
+  // console.log('id:', id);
   const [result] = await connection.execute(
     'SELECT * FROM StoreManager.products WHERE id = ?',
     [id],
