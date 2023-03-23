@@ -21,7 +21,8 @@ const findProduct = async (req, res) => {
 const writeProduct = async (req, res) => {
   const { name } = req.body;
   const { status, message } = await productsService.writeNewProduct(name);
-  return res.status(status).json({ message });
+  if (status !== 201) return res.status(status).json({ message });
+  return res.status(status).json(message);
 };
 module.exports = {
   listProducts,
