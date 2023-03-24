@@ -9,6 +9,15 @@ const validateNewProduct = (name) => {
   } 
   return { status: 201 };
 };
+const validateNewProductAgain = (name) => {
+  const { error } = schemaProduct.validate(name);
+  if (error) {
+    const [status, message] = error.message.split('#');
+
+    return { status: +status, message };
+  }
+  return { status: 200 };
+};
 const validateNewSale = (sale) => {
   const { error } = schemaSale.validate(sale);
   // console.log(error);
@@ -22,4 +31,5 @@ const validateNewSale = (sale) => {
 module.exports = {
   validateNewProduct,
   validateNewSale,
+  validateNewProductAgain,
 };
