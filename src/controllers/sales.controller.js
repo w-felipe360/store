@@ -15,6 +15,7 @@ const listSales = async (_req, res) => {
   if (type) {
     return res.status(type).json(message);
   }
+  // console.log(await salesService.findAllSales);
   return res.status(200).json(message);
 };
 const findSale = async (req, res) => {

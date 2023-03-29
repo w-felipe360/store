@@ -32,6 +32,7 @@ const findAllSales = async () => {
       StoreManager.sales ON sales_products.sale_id = sales.id
     `,
   );
+  console.log(result);
   return result;
 };
 
