@@ -1,4 +1,4 @@
-# API de Gerenciamento de Vendas (Dropshipping)
+# Store Manager 🏪
 
 Este é um projeto de backend que implementa uma API RESTful para gerenciar vendas no formato dropshipping. A aplicação foi desenvolvida em JavaScript e utiliza a biblioteca "mysql2" para interagir com um banco de dados SQL.
 
